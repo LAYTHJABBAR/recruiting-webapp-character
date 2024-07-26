@@ -1,0 +1,13 @@
+.dialog-button {
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.dialog-button-green {
+  color: green;
+}
+
+.dialog-button-red {
+  color: red;
+}
