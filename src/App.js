@@ -2,6 +2,7 @@ import "./App.css";
 import { createContext, useEffect, useReducer } from "react";
 import characterReducer from "./Reducer/Reducer";
 import Header from "./Components/Header";
+import CharacterButtons from "./Components/CharacterButtons";
 
 //To manage state
 export const CharContext = createContext();
@@ -14,7 +15,9 @@ function App() {
     <CharContext.Provider value={appDispatch}>
       <div className="App">
         <Header />
-       
+        <section className="App-section">
+        <CharacterButtons  />
+        </section>
       </div>
     </CharContext.Provider>
   );
