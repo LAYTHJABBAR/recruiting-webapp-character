@@ -87,3 +87,85 @@ Character sheets are defined by the following high-level concepts
       - If the skill check is successful or a failure
 10. Add a party skill check section. This is the same as the above, except we should use the character with the highest skill total to attempt the action
   - Show which character was selected to attempt the action
+=====================================================================================
+# Layth Alshareefi
+
+# React RPG Character Sheet
+
+## Project Overview
+
+This project is a React application designed to create and manage character sheets for tabletop RPG games such as Dungeons & Dragons and Pathfinder. The application allows users to create characters, assign attributes, and perform skill checks. The application can be set up and run using the following commands:
+
+```bash
+npm install
+npm start
+```
+
+## Features
+
+1. **Attributes Management**: 
+   - Increment and decrement controls for each of the 6 attributes.
+   - Display of attribute modifiers calculated from the attribute values.
+
+2. **Class Display and Selection**:
+   - Display available classes and change UI when character meets minimum class requirements.
+   - Display minimum required statistics for a selected class.
+
+3. **Skill Management**:
+   - Implement skills with corresponding attribute modifiers.
+   - Allocate skill points based on character's intelligence modifier.
+   - Display total skill value combining spent points and attribute modifier.
+
+4. **Skill Check**:
+   - Perform skill checks by rolling a random number and comparing it to a Difficulty Class (DC).
+   - Display results of the skill check including the random roll and success/failure status.
+
+5. **Character Management**:
+   - Ability to edit multiple characters simultaneously.
+   - Save and retrieve character data from an API.
+
+## Setup and Running the Application
+
+1. **Installation**:
+   - Clone the repository.
+   - Run `npm install` to install dependencies.
+
+2. **Running the Application**:
+   - Run `npm start` to start the development server.
+   - Open `http://localhost:3000` in your browser to view the application.
+
+## API Integration
+
+The application integrates with an API to save and retrieve character data. The API endpoints are:
+
+- **Save Character Data**: 
+  - POST request to `https://recruiting.verylongdomaintotestwith.ca/api/{laythjabbar}/character` with JSON payload and `Content-Type: application/json` header.
+
+- **Retrieve Character Data**:
+  - GET request to `https://recruiting.verylongdomaintotestwith.ca/api/{laythjabbar}/character`.
+
+
+## Components Overview
+
+- **Attributes**: Manages and displays character attributes and their modifiers.
+- **ClassOptions**: Displays available classes and handles class selection.
+- **SkillCheck**: Performs skill checks and displays results.
+- **DeleteCharacterButton**: Deletes a character.
+- **CharacterForm**: Manages character creation and updates.
+
+## Styling
+
+Styling is minimal and focuses on functionality. CSS classes are used to organize the layout and appearance of components.
+
+## Example Usage
+
+- **Add New Character**: Click the "Add New Character" button to create a new character.
+- **Modify Attributes**: Use the increment and decrement buttons to adjust attribute values.
+- **Select Class**: Click on a class name to view its minimum requirements.
+- **Perform Skill Check**: Select a skill, enter a DC, and click "Roll" to perform a skill check.
+
+## Future Enhancements
+
+- Implement more detailed character sheets with additional attributes and skills.
+- Enhance UI/UX with better styling and interactive elements.
+- Add validation and error handling for user inputs.

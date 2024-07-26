@@ -10,19 +10,19 @@ const CharacterButtons = () => {
     <>
       <button
         onClick={() => characterDispatch({ type: "CHARACTER_ADDED" })}
-        className="character-button"
+        className="button"
       >
         Add New Character
       </button>
       <button
         onClick={() => characterDispatch({ type: "RESET_ALL_CHARACTERS" })}
-        className="character-button"
+        className="button"
       >
         Reset All Characters
       </button>
       <button
         onClick={() => characterDispatch({ type: "SAVE_ALL_CHARACTERS" })}
-        className="character-button"
+        className="button"
       >
         Save All Characters
       </button>

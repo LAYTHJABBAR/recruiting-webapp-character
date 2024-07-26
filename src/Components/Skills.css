@@ -1,0 +1,41 @@
+.skills-container {
+  border: solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px white;
+  
+}
+
+.attribute {
+  margin: 10px;
+}
+
+.increment-button {
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: white;
+  color: black;
+
+}
+
+.decrement-button {
+  transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: white;
+  color: black;
+}
+
+.increment-button:active, .decrement-button:active {
+  transform: scale(0.95);
+  background-color: darkred;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.increment-button.clicked, .decrement-button.clicked{
+  transform: scale(0.95);
+  background-color: darkred;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

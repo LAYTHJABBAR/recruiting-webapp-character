@@ -1,22 +1,33 @@
-.button {
-    color: black;
-    border: white;
+.skill-check-container {
+    border: solid white;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+  }
+  
+  .skill-check-controls {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
     cursor: pointer;
     transition: transform 0.1s ease-in-out, background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
 }
 
-.button:active {
+.btn:active {
     transform: scale(0.95);
     background-color: darkred;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.button.clicked {
+.btn.clicked {
     transform: scale(0.95);
     background-color: darkred;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+.skill-dev, .dc-dev{
+  margin-right: 20px;
+}
+  

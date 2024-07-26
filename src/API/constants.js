@@ -56,4 +56,4 @@ export const SKILL_LIST = [
 
 ]
 
-export const API_URL = ""
+export const API_URL = "https://recruiting.verylongdomaintotestwith.ca/api/{laythjabbar}}/character"
