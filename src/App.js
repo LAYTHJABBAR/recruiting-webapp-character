@@ -1,24 +1,22 @@
-import { useState } from 'react';
-import './App.css';
-import { ATTRIBUTE_LIST, CLASS_LIST, SKILL_LIST } from './consts.js';
+import "./App.css";
+import { createContext, useEffect, useReducer } from "react";
+import characterReducer from "./Reducer/Reducer";
+import Header from "./Components/Header";
 
+//To manage state
+export const CharContext = createContext();
 
 function App() {
-  const [num, setNum] = useState(0);
+  //using useReducer we can access context 
+  const [characters, appDispatch] = useReducer(characterReducer, []);
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>React Coding Exercise</h1>
-      </header>
-      <section className="App-section">
-        <div>
-          Value:
-          {num}
-          <button>+</button>
-          <button>-</button>
-        </div>
-      </section>
-    </div>
+    <CharContext.Provider value={appDispatch}>
+      <div className="App">
+        <Header />
+       
+      </div>
+    </CharContext.Provider>
   );
 }
 
